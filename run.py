@@ -130,7 +130,12 @@ def play_again():
         return
 
 
-instructions()
+def main():
+    """
+    Calls functions to execute the game.
+    """
+    instructions()
+    play_game()
+    
 
-
-play_game()
+main()
