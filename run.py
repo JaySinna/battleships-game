@@ -51,6 +51,13 @@ def play_game():
     for i in game_board:
         print(*i)
 
+    ship1 = create_random_ship()
+    ship2 = create_random_ship()
+    ship3 = create_random_ship()
+    ship4 = create_random_ship()
+    ships_left = 4
+    ammo = 10
+
 
 instructions()
 
