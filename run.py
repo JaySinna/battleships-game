@@ -1,3 +1,6 @@
+import random
+
+
 ROWS = 6
 COLUMNS = 6
 INITIAL_AMMO = 10
