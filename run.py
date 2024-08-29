@@ -85,6 +85,9 @@ def play_game():
             print("\nERROR: You must enter a number between 1 and 6")
             continue
 
+        row = row - 1
+        column = column - 1
+
 
 instructions()
 
