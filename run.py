@@ -111,6 +111,17 @@ def play_game():
         print(f"\nAmmo left: {ammo} | Ships left: {ships_left}")
 
 
+def play_again():
+    try_again = input("\nWanna play again? Enter 'Yes' to play again, enter anything else to quit: ")
+    if try_again == "yes":
+        play_game()
+    elif try_again == "Yes":
+        play_game()
+    else:
+        print("\nGoodbye!\n")
+        return
+
+
 instructions()
 
 
