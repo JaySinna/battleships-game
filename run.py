@@ -36,7 +36,7 @@ def instructions():
     print("Good luck!\n")
 
 
-def create_random_ship():
+def create_random_ships():
     """
     Returns random numbers to be used for the rows and columns
     coordinates of the ships.
@@ -45,6 +45,17 @@ def create_random_ship():
 
 
 def play_game():
+    """
+    Creates the board for the game to be played on, and runs the
+    game by asking the user to enter guesses for the ship's coordinates
+    in the rows and columns.
+    Raises an error message if the user doesn't input a number between 1 and 6.
+    Tells the user after each guess whether they have hit or missed the ships,
+    and updates the game board to show where they have hit or missed.
+    Also lets the user know how many ammunitions they have left, and also how
+    many ships remain left to hit.
+    Adds 1 ammunition onto the user's remaining ammo whenever they get a hit.
+    """
     game_board = [['.', '.', '.', '.', '.', '.'],
                   ['.', '.', '.', '.', '.', '.'],
                   ['.', '.', '.', '.', '.', '.'],
@@ -55,10 +66,10 @@ def play_game():
     for i in game_board:
         print(*i)
 
-    ship1 = create_random_ship()
-    ship2 = create_random_ship()
-    ship3 = create_random_ship()
-    ship4 = create_random_ship()
+    ship1 = create_random_ships()
+    ship2 = create_random_ships()
+    ship3 = create_random_ships()
+    ship4 = create_random_ships()
     ships_left = 4
     ammo = 10
 
