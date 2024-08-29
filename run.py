@@ -31,3 +31,6 @@ def instructions():
     print("For the first row and first column, you would guess row 1 and column 1.")
 
     print("Good luck!\n")
+
+
+instructions()
