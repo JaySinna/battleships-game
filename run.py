@@ -105,6 +105,11 @@ def play_game():
         if ammo == 0 and ships_left > 0:
             print("You have run out of ammo, you lose!\n")
 
+        for i in game_board:
+            print(*i)
+
+        print(f"\nAmmo left: {ammo} | Ships left: {ships_left}")
+
 
 instructions()
 
