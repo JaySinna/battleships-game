@@ -73,6 +73,18 @@ def play_game():
     ships_left = 4
     ammo = 10
 
+    while ammo:
+        try:
+            row = int(input(f"\nEnter a row number between 1 and {ROWS}: "))
+            column = int(input(f"Enter a column number between 1 and {COLUMNS}: "))
+        except ValueError:
+            print("ERROR: You can only enter a number")
+            continue
+
+        if row not in range(1,7) or column not in range(1, 7):
+            print("\nERROR: You must enter a number between 1 and 6")
+            continue
+
 
 instructions()
 
