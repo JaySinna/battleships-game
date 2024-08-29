@@ -33,6 +33,10 @@ def instructions():
     print("Good luck!\n")
 
 
+def create_random_ship():
+    return random.randrange(ROWS), random.randrange(COLUMNS)
+
+
 def play_game():
     game_board = [['.', '.', '.', '.', '.', '.'],
                   ['.', '.', '.', '.', '.', '.'],
