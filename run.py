@@ -98,6 +98,7 @@ def play_game():
             ships_left -= 1
             if ships_left == 0:
                 print("All ships are destroyed, you win!")
+                play_again()
         else:
             print("\nMISS!\n")
             game_board[row][column] = "-"
@@ -109,6 +110,8 @@ def play_game():
             print(*i)
 
         print(f"\nAmmo left: {ammo} | Ships left: {ships_left}")
+
+    play_again()
 
 
 def play_again():
