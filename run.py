@@ -89,6 +89,21 @@ def play_game():
         column = column - 1
 
 
+        if game_board[row][column] == "-" or game_board[row][column] == "X":
+            print("\nYou have already guessed this coordinate, try another one!\n")
+            continue
+        elif (row, column) == ship1 or (row, column) == ship2 or (row, column) == ship3 or (row, column) == ship4:
+            print("\nHIT! 1 ship down, and you get 1 new ammo!\n")
+            game_board[row][column] = "X"
+            ships_left -= 1
+            if ships_left == 0:
+                print("All ships are destroyed, you win!")
+        else:
+            print("\nMISS!\n")
+            game_board[row][column] = "-"
+            ammo -= 1
+
+
 instructions()
 
 
