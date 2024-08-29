@@ -115,6 +115,11 @@ def play_game():
 
 
 def play_again():
+    """
+    Asks the user if they want to play again, if they answer yes, play_game
+    function is called again, if they answer no, goodbye message is printed
+    to the terminal and game is exited.
+    """
     try_again = input("\nWanna play again? Enter 'Yes' to play again, enter anything else to quit: ")
     if try_again == "yes":
         play_game()
