@@ -5,11 +5,20 @@ INITIAL_SHIPS = 4
 
 
 def get_username():
+    """
+    Get a username from the user to be used in the welcome
+    message, and then return the username.
+    """
     username = str(input("\nPlease enter your username: "))
     return username
 
 
 def instructions():
+    """
+    Prints instructions for the game to the terminal, using the
+    returned username value from the get_username function in the welcome
+    message.
+    """
     print(f"\nHello {get_username()}, welcome to Battleships!")
 
     print("\nYour objective is to find and destroy all the hidden ships on the map!\n")
