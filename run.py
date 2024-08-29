@@ -37,6 +37,10 @@ def instructions():
 
 
 def create_random_ship():
+    """
+    Returns random numbers to be used for the rows and columns
+    coordinates of the ships.
+    """
     return random.randrange(ROWS), random.randrange(COLUMNS)
 
 
