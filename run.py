@@ -12,7 +12,7 @@ def get_username():
     Get a username from the user to be used in the welcome
     message, and then return the username.
     """
-    username = str(input("\nPlease enter your username:\n "))
+    username = str(input("\nPlease enter your username: "))
     return username
 
 
@@ -75,8 +75,8 @@ def play_game():
 
     while ammo:
         try:
-            row = int(input(f"\nEnter a row number between 1 and {ROWS}:\n "))
-            column = int(input(f"Enter a column number between 1 and {COLUMNS}:\n "))
+            row = int(input(f"\nEnter a row number between 1 and {ROWS}: "))
+            column = int(input(f"Enter a column number between 1 and {COLUMNS}: "))
         except ValueError:
             print("ERROR: You can only enter a number")
             continue
@@ -120,7 +120,7 @@ def play_again():
     function is called again, if they answer no, goodbye message is printed
     to the terminal and game is exited.
     """
-    try_again = input("\nWanna play again? Enter 'Yes' to play again, enter anything else to quit:\n ")
+    try_again = input("\nWanna play again? Enter 'Yes' to play again, enter anything else to quit: ")
     if try_again.lower() == "yes":
         play_game()
     else:
