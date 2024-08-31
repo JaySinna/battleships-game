@@ -64,6 +64,7 @@ If the user hits all 4 ships they win, and if they run out of ammo they lose.
   - Create second game board for the user to place their own ships and have the computer make guesses in return
   - Store users scores on a spreadsheet
   - Have ships that take up more than 1 space on the board
+  - Add coloured aspects to the game e.g. - turns red for a miss, X turns green for a hit.
 
 ## Testing
 
