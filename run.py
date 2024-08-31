@@ -81,13 +81,12 @@ def play_game():
             print("ERROR: You can only enter a number")
             continue
 
-        if row not in range(1,7) or column not in range(1, 7):
+        if row not in range(1, 7) or column not in range(1, 7):
             print("\nERROR: You must enter a number between 1 and 6")
             continue
 
         row = row - 1
         column = column - 1
-
 
         if game_board[row][column] == "-" or game_board[row][column] == "X":
             print("\nYou have already guessed this coordinate, try another one!\n")
@@ -134,6 +133,6 @@ def main():
     """
     instructions()
     play_game()
-    
+
 
 main()
